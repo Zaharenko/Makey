@@ -1,0 +1,3 @@
+@import "_mixins/font-face";
+@include font-face("PT-Sans-Caption", "../fonts/PTSansCaption/PTSansCaptionRegular");
+@include font-face("PT-Sans-Caption", "../fonts/PTSansCaption/PTSansCaptionBold", bold);

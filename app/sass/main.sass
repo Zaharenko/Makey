@@ -1,0 +1,155 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $number
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+/* Section Top Header */
+
+.top_header
+    min-height: 65px
+    background: #fff
+
+.top_header__logo
+	margin-left: 15px	
+
+.top_header__logo img
+	margin-top: 5px
+
+.top_header__phone
+	line-height: 65px	
+	font-style: normal
+	font-weight: bold
+	font-size: 20px
+	text-align: right
+	text-transform: capitalize
+	color: $number
+
+.top_header__buttons
+	text-align: right
+	margin-right: 15px
+	line-height: 65px	
+
+.top_header__buttons a
+	&:nth-child(1)
+		font-size: 13px
+		text-decoration-line: underline
+		text-transform: capitalize
+		color: $grey
+		
+.top_header__buttons a		
+	&:nth-child(2)
+		background: #DDDDDD
+		border-radius: 100px
+		font-size: 14px
+		text-align: center
+		text-transform: capitalize
+		color: $number
+		padding: 9px 30px
+		margin: 0px 20px
+
+.top_header__buttons__favorites
+		border: 1px solid $header_icons
+		display: inline-block
+		top: 15px
+		height: 36px
+		width: 36px
+		border-radius: 100px
+		position: relative
+		margin-right: 20px
+
+.top_header__buttons__favorites img
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)	
+
+.top_header__buttons__favorites span
+		position: relative
+		right: -5px
+		top: -35px
+		display: inline-block
+		width: 16px
+		line-height: 16px
+		font-size: 9px
+		font-weight: bold
+		text-align: center
+		color: $number
+		background: $header_icons
+		border-radius: 100px	
+		box-shadow: 0px 0px 0px 2px #fff inset
+
+.top_header__buttons__basket
+		background:  $header_icons
+		display: inline
+		float: right
+		top: 15px
+		height: 36px
+		width: 36px
+		border-radius: 100px
+		position: relative
+
+.top_header__buttons__basket img
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+
+.top_header__buttons__basket span
+		position: relative
+		right: -5px
+		top: -35px
+		display: inline-block
+		width: 16px
+		line-height: 16px
+		font-size: 9px
+		font-weight: bold
+		text-align: center
+		color: $number
+		background: #DDDDDD
+		border-radius: 100px	
+		box-shadow: 0px 0px 0px 2px #fff inset;			
+	
+.bg-custom
+	background: #eeeeee
+	max-height: 50px
+
+
+
+/* Section Top Header */
+
+@import "media" // Always at the end

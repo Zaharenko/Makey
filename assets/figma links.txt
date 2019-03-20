@@ -1,0 +1,7 @@
+Десктопная версия - https://www.figma.com/file/IPwOaBvdKUrfI8Sap6RkJih4/desktop-version?node-id=0%3A1
+ 
+Сценарии взаимодействия: https://www.figma.com/file/IPwOaBvdKUrfI8Sap6RkJih4/desktop-version?node-id=53%3A4572
+ 
+Интерактивные взаимодействия и состояния элементов: https://www.figma.com/file/IPwOaBvdKUrfI8Sap6RkJih4/desktop-version?node-id=1%3A5 
+
+Функционал адаптивной версии: https://www.figma.com/file/NcWlC5cuWypuWmwsVRHc8WkU/adaptive-elements?node-id=0%3A1
