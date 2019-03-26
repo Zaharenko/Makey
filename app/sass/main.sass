@@ -148,22 +148,41 @@ b, strong
 	background: #eeeeee
 	max-height: 50px
 	margin-bottom: 30px
+
 .bg-custom .navbar-nav .nav-link
 	font-size: 14px
 	color: $menu_link !important
 	margin: 0px 15px
+	white-space: nowrap
+
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link
     color: $number !important
 
 .header-search
 	margin-left: 15px
+
+.form-control
+		background-color: transparent !important
+		font-size: 14px !important
+		text-transform: capitalize
+		color: #AAAAAA !important
+		border: none !important
+
+.form-control
+	&::placeholder
+		color: #AAAAAA
+		font-size: 14px		
+
+.btn-outline-secondary
+	background-color: transparent !important
+	border: none !important	    
 /* Menu */
 
 /* Section Top Header */
 
 /* Top slick slider */
 .top-slider
-	max-height: 460px
+	height: 460px
 	width: 100%
 	overflow: hidden
 
@@ -173,7 +192,7 @@ b, strong
 .top-slider__one-slider img
 	object-fit: cover
 	width: 100%
-	max-height: 460px
+	height: 460px
 
 .top-slider__one-slider__info
 	position: absolute
@@ -217,27 +236,59 @@ b, strong
 		background: #cccccc !important	
 
 .slick-prev
-    left: 30px
-    z-index: 9
+  left: 30px
+  z-index: 9
 
 .slick-next
-    right: 30px
-    z-index: 9						
+  right: 30px
+  z-index: 9
+
+.slick-next:before
+    content: url('../img/top-slider/next.svg')
+
+.slick-prev:before
+    content: url('../img/top-slider/prev.svg')	
+
+.slick-dots li button:before
+  color: #cccccc !important					
 /* Top slick slider */	
 
 /* About Product */	
 .about-product
-	margin: 100px 165px 165px
+	margin: 100px 175px 150px
+
 .about-product h1
 	font-size: 32px
 	font-weight: bold
 	text-transform: uppercase
 	color: $number	
 	margin-bottom: 25px
+
 .about-home p
 	font-size: 16px
 	line-height: 24px
-	color: #888888
+	color: $menu_link
+
+.about-home-product
+	margin: 0px 35px
+
+.about-home-product img
+	width: 100%	
+
+.about-home-product p
+	font-weight: bold
+	font-size: 24px
+	text-transform: uppercase
+	color: $number
+	font-style: normal
+	line-height: normal
+
+.product_women p
+	margin-top: 22px
+	margin-bottom: 0px	
+
+.product_men p
+	margin-bottom: 22px				
 
 .about-home p span
 	display: inline-block
@@ -245,4 +296,572 @@ b, strong
 	margin-top: -25px
 
 /* About Product */
+
+/* Product slider home page */
+.home-slider-product
+	margin-bottom: 160px
+	position: relative
+
+.home-slider-product:after
+	content: url('../img/product-slider/visual-left.svg')
+	position: absolute
+	top: 7px
+	height: 100%
+	left: 0px	
+
+.home-slider-product:before
+	content: url('../img/product-slider/visual-right.svg')
+	position: absolute
+	top: 7px
+	height: 100%
+	right: 0px			
+
+ul.tabs
+  margin: 0px auto
+  padding: 0
+  list-style: none
+  height: 46px
+  li
+    float: left
+    margin: 0
+    cursor: pointer
+    padding: 0px 50px
+    height: 46px
+    line-height: 46px
+    color: $menu_link
+    overflow: hidden
+    position: relative
+		background: #eeeeee
+		border-radius: 4px 0px 0px 4px
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		line-height: normal
+		text-transform: capitalize		
+
+
+ul.tabs li.active:after
+	display: none
+
+ul.tabs li:after
+	content: ""
+	position: absolute
+	right: 0px
+	top: 10px
+	bottom: 10px
+	width: 1px
+	background: $grey
+
+		
+
+ul.tabs li
+  &:hover
+    background-color: #ccc
+    color: #333
+  &.active
+    background-color: #401E17
+    color: #fff
+    display: block
+	
+
+.tab_container
+  clear: both
+  float: left
+  width: 100%
+  overflow: auto
+
+.tab_content
+  padding: 20px
+  display: none
+
+.tab_drawer_heading
+  display: none
+/* Product slider home page */
+
+/* Baner home page */
+.baner-home
+	background: url('../img/home-baner/bg.png')
+	background-position: center bottom
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 190px
+	width: 100%
+	bottom: 0px
+
+.baner-home-page
+	position: relative
+	margin-bottom: 100px
+
+.baner-home-page__wrapper
+	padding: 0px 150px 50px
+
+.baner-home-page__wrapper p
+	font-weight: bold
+	font-size: 32px
+	line-height: normal
+	text-transform: uppercase
+	color: $number
+
+.wrapper-favorite
+	position: relative	
+
+.wrapper-favorite img:nth-child(1)
+	position: absolute
+	top: 0px
+	left: 0px
+	z-index: 3
+
+.wrapper-favorite img:nth-child(2)
+	position: absolute	
+	top: 0px
+	left: calc(50% - 100px)
+	z-index: 2
+
+.wrapper-favorite img:nth-child(3)
+	position: absolute
+	top: 0px	
+	right: 0px		
+	z-index: 1
+/* Baner home page */	
+
+/* Cart product home page */
+.cart-product
+	padding: 0px 140px 100px
+	text-align: center
+	.cart-product__one
+		border-radius: 16px
+		margin: 0px 25px
+		background: #FFFFFF
+		box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.09)
+		position: relative
+		margin-bottom: 40px
+		img
+			width: 100%
+			object-fit: cover
+			padding-top: 15px	
+		h3
+			font-weight: bold
+			font-size: 24px
+			line-height: normal
+			color: $number
+			padding: 20px 30px 0px
+			margin-bottom: 5px
+			text-align: left
+		p	
+			font-weight: normal
+			font-size: 14px
+			line-height: 21px
+			color: $menu_link	
+			padding: 0px 30px
+			margin-bottom: 0px
+			text-align: left
+		a			
+			font-weight: normal
+			font-size: 14px
+			line-height: 27px
+			text-align: center
+			text-decoration-line: underline
+			color: $header_icons
+			margin-bottom: 20px
+			display: inline-block
+
+.cart-one-first
+	position: absolute
+	background: #FFFFFF
+	box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.09)
+	border-radius: 16px 16px 0px 0px
+	top: -15px
+	height: 25px
+	left: 15px
+	right: 15px
+	z-index: -1	
+
+.cart-one-second
+	position: absolute
+	background: #FFFFFF
+	box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.09)
+	border-radius: 16px 16px 0px 0px
+	top: -30px
+	height: 45px
+	left: 30px
+	right: 30px
+	z-index: -2		
+
+.line-cart
+	margin: 0px 30px
+	background: #CCCCCC	
+
+.button-open
+	font-weight: bold
+	font-size: 14px
+	line-height: normal
+	text-align: center
+	color: #AAAAAA
+	border: 1px solid #CCCCCC
+	box-sizing: border-box
+	border-radius: 100px
+	display: inline-block
+	padding: 10px 40px
+/* Cart product home page */
+
+/* Footer */
+footer
+	background: $number
+.footer-wrapper
+	padding: 50px 150px
+.footer-wrapper ul
+	padding: 0px
+	margin-bottom: 0px	
+.footer-wrapper li
+	padding: 10px 0px		
+.footer-wrapper li a
+	font-weight: normal
+	font-size: 14px
+	line-height: normal
+	color: #CCCCCC
+.footer-info-block
+	float: right
+	text-align: right	
+.time-work
+	margin-bottom: 30px
+	p
+		font-weight: bold
+		font-size: 14px
+		line-height: 24px
+		color: #ffffff
+		margin-bottom: 0px
+.footer-wrapper-title
+	font-weight: normal !important
+	font-size: 14px
+	line-height: 24px
+	color: $menu_link !important
+	margin-bottom: 0px	
+
+.mobile-question
+	margin-bottom: 30px	
+	a
+		font-weight: bold
+		font-size: 18px
+		line-height: normal
+		color: $header_icons
+
+.social-icons a:nth-child(1)
+	margin-right: 5px		
+
+.footer-wrapper-mini
+	background: #FFFFFF
+	padding: 20px 150px	
+.footer-wrapper-mini p
+	font-weight: normal
+	font-size: 14px
+	line-height: normal
+	color: $number
+.payments
+	float: right
+	img
+		margin-right: 10px
+
+.payments img:last-child
+	margin-right: 0px				
+/* Footer */
+
+/* Catalog */
+.catalog
+	padding: 30px 165px 100px
+
+.title-page
+	font-weight: bold
+	font-size: 30px
+	line-height: normal
+	color: $number
+	margin-bottom: 0px
+.breadcrams
+	margin-bottom: 40px
+	a
+		font-weight: normal
+		font-size: 13px
+		line-height: normal
+		color: $grey
+
+.breadcrams a:after
+	content: "/"	
+	padding: 0px 10px
+	color: $grey
+	font-weight: normal
+	font-size: 13px
+	line-height: normal
+
+.breadcrams a:last-child:after
+	display: none	
+
+.catalog-product
+	display: inline-block
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFFFFF 100%), url(../img/catalog/frame.png)
+	border: 1px solid #DDDDDD
+	box-sizing: border-box
+	border-radius: 8px
+	min-height: 400px
+	width: 100%
+	background-position: center right
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	margin: 0px 0px 30px
+
+.catalog-product-medium
+	display: inline-block
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFFFFF 100%), url(../img/catalog/frame-medium.png)
+	border: 1px solid #DDDDDD
+	box-sizing: border-box
+	border-radius: 8px
+	min-height: 400px
+	width: 100%
+	background-position: center right
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	margin: 0px 0px 30px
+
+.catalog-product-small
+	display: inline-block
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFFFFF 100%), url(../img/catalog/frame-small.png)
+	border: 1px solid #DDDDDD
+	box-sizing: border-box
+	border-radius: 8px
+	min-height: calc(400px / 2 - 18px)
+	width: 100%
+	background-position: center right
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+
+.product-small .catalog-product-small:first-child
+	margin: 0px 0px 30px			
+
+.catalog-name-product
+	position: absolute
+	bottom: 30px 
+	left: 40px
+	right: 40px
+	font-weight: bold
+	font-size: 24px
+	line-height: normal
+	color: $number
+/* Catalog */	
+
+/* Delivery */
+.delivery
+	padding: 30px 165px 100px	
+
+.delivery-title
+	font-weight: bold
+	font-size: 36px
+	line-height: normal
+	color: $number
+	margin-bottom: 15px
+
+.delivery-info
+	font-weight: normal
+	font-size: 16px
+	line-height: 24px
+	color: $menu_link
+	margin-bottom: 0px
+	
+.delivery-desc
+	margin-top: 62px
+	padding-left: 30px
+	border-left: 1px solid #EEEEEE
+	p:nth-child(1)
+		font-weight: normal !important
+		font-size: 16px
+		line-height: normal
+		color: #AAAAAA !important
+		margin-bottom: 0px
+	p:nth-child(2)
+		font-weight: bold
+		font-size: 16px
+		line-height: normal
+		color: $header_icons
+		margin-bottom: 0px
+	span
+		margin-top: 5px
+		display: inline-block	
+		font-weight: normal
+		font-size: 16px
+		line-height: normal
+		color: #AAAAAA
+		margin-bottom: 0px
+
+.post-office
+	margin-bottom: 70px
+	margin-top: 70px
+
+.addresses-info
+	margin-top: 30px
+	p	
+		font-weight: normal
+		font-size: 16px
+		line-height: 24px
+		color: $menu_link
+		margin-bottom: 0px
+
+.addresses-city
+	font-weight: bold !important
+	font-size: 18px !important
+	line-height: 24px
+	color: $number !important
+	margin-bottom: 0px	
+
+.addresses-map
+	margin-top: 30px							
+/* Delivery */	
+
+/* Services */
+.services
+	padding: 30px 165px 100px	
+
+.title-info
+	font-weight: bold
+	font-size: 36px
+	line-height: normal
+	color: $number
+	margin-bottom: 10px	
+
+.title-info-desc
+	margin-bottom: 30px
+	font-weight: normal
+	font-size: 16px
+	line-height: 24px
+	color: $menu_link	
+
+.services-types
+	padding: 0px 20px
+.services-types-one
+	position: relative
+	text-align: center
+
+.services-types-one:before
+	position: absolute
+	content: ""
+	border: 1px solid #DDDDDD
+	border-bottom: none
+	width: 100%	
+	height: 200px
+	top: 15px
+	left: 0px	
+	border-top-left-radius:  10px
+	border-top-right-radius: 10px
+	transform: matrix(1, 0, 0, 1, 1, 1)
+	z-index: -1	
+
+.services-types-one-info
+	padding: 20px 30px 10px	
+	h4
+		font-weight: bold
+		font-size: 18px
+		line-height: 21px
+		color: $number
+	p
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    color: $menu_link	
+	a
+		color: $header_icons
+		font-size: 14px
+		line-height: 27px
+		display: inline-block
+		text-decoration: underline
+/* Services */
+
+/* Paying */
+.paying
+	padding: 30px 165px 100px
+
+.payment-types
+	text-align: left
+	margin-bottom: 55px
+	p
+		font-weight: bold
+		font-size: 24px
+		line-height: 24px
+		color: $header_icons
+		margin-bottom: 0px
+		margin-top: 10px	
+
+.payment-types-cash
+	margin-bottom: 80px		
+
+.payment-types-card
+	margin-bottom: 80px	
+
+.payment-types-invoice
+	margin-bottom: 80px	
+
+.payment-types-webpay	
+	margin-bottom: 80px
+
+.payment-types-erip
+	margin-bottom: 80px	
+	
+.payment-types-halva
+	margin-bottom: 80px	
+
+.payment-types-kartapokupok	
+	margin-bottom: 80px				
+
+.payment-types-title
+	font-weight: bold
+	font-size: 18px
+	line-height: norma
+	color: $number
+	margin-bottom: 0px
+	margin-top: 20px	
+
+.payment-types-title-desc
+	margin-top: 15px
+	margin-bottom: 0px
+	font-weight: normal
+	font-size: 14px
+	line-height: 24px
+	color: $menu_link
+	a
+		color: $menu_link	
+
+.payment-types-name-payment			
+	margin-bottom: 0px
+	font-weight: bold
+	font-size: 16px
+	line-height: 24px
+	color: $menu_link
+
+.payment-types-name-payment + .payment-types-info	
+	margin-top: 0px !important
+
+.payment-types-name-payment + .payment-types-title-desc	
+	margin-top: 0px !important
+
+.payment-types-name-payment
+	margin-top: 15px	
+
+.payment-types-name-payment:nth-child(1)
+	margin-top: 90px				
+
+.payment-types-info
+	margin-top: 90px
+	margin-bottom: 0px
+	font-weight: normal
+	font-size: 14px
+	line-height: 24px
+	color: $menu_link	
+/* Paying */										
+
+
+
+
+
+
+
+
+
 @import "media" // Always at the end
