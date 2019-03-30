@@ -1,9 +1,3 @@
-$(function() {
-
-    // Custom JS
-
-});
-
 $(document).ready(function() {
     // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
@@ -83,10 +77,115 @@ $(document).ready(function() {
     });
 
     // Product slider home page
-    $('#product-slider-lazy').slick({
-        lazyLoad: 'ondemand',
+    $('.product-slider-lazy').slick({
+        dots: false,
+        infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
+
+    $('ul.tabs li').click(function() {
+        $(".product-slider-lazy").slick('reinit');
+    });
+
+    // Ajax photo
+    $('.all-works-service').click(function() {
+        if ($(".service-gallery").is(":hidden")) {
+            $(".service-gallery").show("slow");
+        } else {
+            $("#target-service-one").slideDown();
+        }
+    });
+
+    $('.popup-gallery-service').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Загрузка #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            }
+        }
+    });
+
+    //Range Slider
+    (function() {
+
+        var parent = document.querySelector(".range-slider");
+        if (!parent) return;
+
+        var
+            rangeS = parent.querySelectorAll("input[type=range]"),
+            numberS = parent.querySelectorAll("input[type=number]");
+
+        rangeS.forEach(function(el) {
+            el.oninput = function() {
+                var slide1 = parseFloat(rangeS[0].value),
+                    slide2 = parseFloat(rangeS[1].value);
+
+                if (slide1 > slide2) {
+                    [slide1, slide2] = [slide2, slide1];
+                    // var tmp = slide2;
+                    // slide2 = slide1;
+                    // slide1 = tmp;
+                }
+
+                numberS[0].value = slide1;
+                numberS[1].value = slide2;
+            }
+        });
+
+        numberS.forEach(function(el) {
+            el.oninput = function() {
+                var number1 = parseFloat(numberS[0].value),
+                    number2 = parseFloat(numberS[1].value);
+
+                if (number1 > number2) {
+                    var tmp = number1;
+                    numberS[0].value = number2;
+                    numberS[1].value = tmp;
+                }
+
+                rangeS[0].value = number1;
+                rangeS[1].value = number2;
+
+            }
+        });
+
+    })();
 
 });

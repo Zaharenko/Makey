@@ -301,6 +301,7 @@ b, strong
 .home-slider-product
 	margin-bottom: 160px
 	position: relative
+	text-align: center
 
 .home-slider-product:after
 	content: url('../img/product-slider/visual-left.svg')
@@ -370,12 +371,62 @@ ul.tabs li
   width: 100%
   overflow: auto
 
+.tab-wrapper
+	padding: 60px 230px 40px
+	.slick-prev
+    left: -35px
+    z-index: 9
+	.slick-next
+    right: -35px
+    z-index: 9
+
+
 .tab_content
-  padding: 20px
   display: none
 
 .tab_drawer_heading
   display: none
+
+.product-slider-lazy-one
+	margin: 0px 15px
+	border: 1px solid #EEEEEE
+	border-radius: 8px
+	text-align: center
+	img
+		object-fit: cover
+		display: block
+		width: 100%
+		margin-top: 10px
+
+.product-slider-type
+	border: 1px solid #EEEEEE
+	border-radius: 0px 0px 6px 6px
+	font-weight: bold
+	font-size: 11px
+	line-height: normal
+	color: $menu_link
+	padding: 10px
+
+.product-slider-price
+	font-weight: bold
+	font-size: 18px
+	line-height: normal
+	color: $header_icons
+	span
+		text-decoration-line: line-through
+		color: $grey
+
+.line-product
+	border: 1px solid #EEEEEE	
+	margin: 15px 30px
+
+.product-slider-info
+	font-weight: bold
+	font-size: 14px
+	line-height: normal
+	color: $number
+	padding: 0px 30px 15px
+	margin-bottom: 0px	
 /* Product slider home page */
 
 /* Baner home page */
@@ -774,6 +825,56 @@ footer
 		text-decoration: underline
 /* Services */
 
+/* Service one */
+.service-one
+	padding: 30px 165px 100px
+
+.popup-gallery-service
+	text-align: center
+	a
+		margin: 15px 0px
+		display: inline-block
+		img
+			display: inline-block
+			width: 100%
+			height: 300px	
+
+#target-service-one
+	display: none	
+.service-one-info
+	position: relative
+
+.title-info-btn
+	position: absolute
+	right: 0px
+	top: calc(50%  - 19px)
+	background: $header_icons
+	border-radius: 100px
+	font-weight: bold
+	font-size: 14px
+	line-height: normal
+	text-align: center
+	color: #FFFFFF
+	padding: 10px 40px
+
+.all-works-service
+	background: transparent
+	border: none
+	margin-top: 40px
+	font-weight: bold
+	font-size: 14px
+	line-height: normal
+	text-align: right
+	color: $number
+	position: relative
+	outline: none
+
+.all-works-service:after
+	content: url('../img/icons/all-works-service.svg')		
+	position: absolute	
+	margin-left: 10px	
+/* Service one */		
+
 /* Paying */
 .paying
 	padding: 30px 165px 100px
@@ -957,7 +1058,23 @@ footer
 	color: $menu_link			
 /* Discounts */	
 
-/* Discounts */	
+/* Discount */
+.discount-one-product
+	padding: 30px 165px 100px	
+
+.discount-one-info
+	margin-bottom: 50px	
+
+.discount-one-form
+	text-align: center
+	.title-info
+		font-weight: bold
+		font-size: 36px
+		line-height: normal
+		color: $number				
+/* Discount */		
+
+/* Blog */	
 .blog
 	padding: 30px 165px 100px	
 
@@ -1009,7 +1126,7 @@ footer
 	font-size: 16px
 	line-height: 24px
 	color: $menu_link			
-/* Discounts */			
+/* Blog */			
 
 /* Pagination */
 .pagination
@@ -1076,8 +1193,31 @@ footer
 	a
 		margin-top: 40px
 		dis				
-/* Article */													
+/* Article */	
 
+/* Collections */	
+.collection
+	margin: 30px 165px 20px
+.collection-block
+	margin: 70px 0px 0px
+.collection	.cart-product
+	padding: 0px !important
+.collection  .cart-product__one
+	margin-bottom: 80px 	
+/* Collections */	
+
+/* Subcategory */
+.subcategory
+	margin: 30px 165px 100px
+
+.subcategory-filter
+	border: 1px solid #DDDDDD
+	box-sizing: border-box
+	border-radius: 4px
+	margin-bottom: 40px
+
+
+/* Subcategory */			
 
 
 

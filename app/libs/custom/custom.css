@@ -1,0 +1,39 @@
+.top-slider .slick-prev {
+    background: #888888;
+    border-radius: 100px;
+    min-height: 36px;
+    min-width: 36px;
+}
+
+.top-slider .slick-next {
+    background: #888888;
+    border-radius: 100px;
+    min-height: 36px;
+    min-width: 36px;
+}
+
+.tab-wrapper .slick-prev {
+    background: #DDDDDD;
+    border-radius: 100px;
+    min-height: 36px;
+    min-width: 36px;
+}
+
+.tab-wrapper .slick-next {
+    background: #DDDDDD;
+    border-radius: 100px;
+    min-height: 36px;
+    min-width: 36px;
+}
+
+.form-control {
+    text-transform: capitalize;
+    border: 1px solid #CCCCCC !important;
+    border-radius: 2px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    text-indent: 20px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #BBBBBB !important;
+}
