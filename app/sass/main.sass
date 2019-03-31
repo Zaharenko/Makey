@@ -3,11 +3,34 @@
 @import "libs"
 
 ::placeholder
-	color: #666
+	color: #BBBBBB
+	transition: 1s
+	font-family: $default-font
+
+input:focus::-webkit-input-placeholder
+  color: transparent
+
+ 
+input:focus::-moz-placeholder
+  color: transparent
+
+ 
+input:focus:-moz-placeholder
+  color: transparent
+
+ 
+input:focus:-ms-input-placeholder
+  color: transparent
+
 
 ::selection
 	background-color: $accent
 	color: #fff
+
+svg path
+	stroke:inherit
+	stroke-width:inherit
+	fill:inherit
 
 body
 	font-size: 16px
@@ -161,12 +184,13 @@ b, strong
 .header-search
 	margin-left: 15px
 
-.form-control
-		background-color: transparent !important
-		font-size: 14px !important
-		text-transform: capitalize
-		color: #AAAAAA !important
-		border: none !important
+.collapse
+	.form-control
+			background-color: transparent !important
+			font-size: 14px !important
+			text-transform: capitalize
+			color: #AAAAAA !important
+			border: none !important
 
 .form-control
 	&::placeholder
@@ -1071,7 +1095,36 @@ footer
 		font-weight: bold
 		font-size: 36px
 		line-height: normal
-		color: $number				
+		color: $number
+
+.form-discount
+	.form-control:focus
+		box-shadow: none
+	.form-group
+		border: 1px solid #CCCCCC
+		border-radius: 2px
+		outline: none
+		max-width: 350px
+		text-align: center
+		margin: 0px 25% 30px
+		input
+			font-weight: normal
+			font-size: 14px
+			line-height: normal
+			text-indent: 20px
+			font-feature-settings: 'pnum' on, 'lnum' on;
+			color: #BBBBBB	
+	.form-discount-btn
+		background: #BBBBBB
+		border: 1px solid #BBBBBB
+		border-radius: 100px
+		font-weight: bold
+		font-size: 14px
+		line-height: normal
+		text-align: center
+		color: #FFFFFF
+		padding: 10px 50px
+		margin-top: 10px						
 /* Discount */		
 
 /* Blog */	
@@ -1217,7 +1270,345 @@ footer
 	margin-bottom: 40px
 
 
-/* Subcategory */			
+/* Subcategory */	
+
+/* Shop */
+.shop
+	margin: 30px 165px 100px
+
+.shop-addres
+	margin: 50px -15px
+
+.shop-addres-one
+	font-weight: bold
+	font-size: 18px
+	line-height: normal
+	color: $number
+	margin-bottom: 50px
+
+	
+.shop-addres-one-info
+	text-align: center
+	border: 1px solid #DDDDDD
+	border-radius: 10px
+	position: relative	
+	padding: 0px 20px
+	.shop-icon
+		background: #FFFFFF
+		border: 1px solid #dddddd
+		border-radius: 100px
+		position: absolute
+		top: -31px
+		left: calc(50% - 31px)
+		img
+			padding: 15px
+	.shop-addres-addres
+		margin-top: 50px
+		margin-bottom: 0px
+		font-size: 15px
+		line-height: 21px
+		text-align: center
+		color: $menu_link
+		span	
+			font-weight: bold
+	.shop-addres-line
+		margin: 15px 30px	
+	.shop-addres-time
+		font-weight: normal
+		font-size: 13px
+		line-height: 18px
+		color: $menu_link
+		margin-bottom: 30px
+		p
+			margin-bottom: 0px
+	.shop-addres-phone
+		border-top: 1px solid #dddddd
+		margin: 0px -20px
+		padding: 20px 10px 
+		a
+			font-weight: bold
+			font-size: 14px
+			line-height: 21px
+			color: $shop-phone
+			display: inline-block	
+
+.shop-map
+	margin: 0px auto		
+/* Shop */
+
+/* Search page */
+.search-page
+	margin: 30px 165px 100px
+
+.search-block
+	margin-top: 40px
+
+.search-sidebar
+	li:first-child
+		padding: 0px 5px	10px
+	li
+		font-weight: bold
+		font-size: 16px
+		line-height: 36px
+		color: $number
+		padding: 10px 5px	10px
+		list-style-type: none
+		a
+			font-weight: bold
+			font-size: 16px
+			line-height: 36px
+			color: $number
+
+.search-one
+	text-align: center
+	border: 1px solid #EEEEEE
+	border-radius: 8px
+	.search-product
+		width: 100%
+		display: block
+		margin: 0px auto
+	.search-one-price
+		font-weight: bold
+    font-size: 18px
+    line-height: normal
+    color: $header_icons
+		padding: 0px 30px
+		span	
+			text-decoration-line: line-through
+			color: $grey
+	.search-one-line-favorites
+		position: relative			
+		.search-one-line
+			margin: 15px 30px	
+		.favorites-icon
+			position: absolute
+			bottom: -23px 
+			right: 20px		
+			background: #EEEEEE
+			border-radius: 100px
+			img
+				padding: 15px	
+	.search-one-info
+		padding: 0px 30px
+		text-align: left
+		font-weight: bold
+		font-size: 14px
+		line-height: normal
+		color: $number		
+/* Search page */	
+
+/* Personal-info */	
+.personal-info
+	margin: 30px 165px 100px
+
+.personal-block-change
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16)
+	border-radius: 2px
+	padding: 20px 30px
+	a
+		font-weight: bold
+		font-size: 14px
+		line-height: normal
+		color: $grey
+		transition: 1s
+		display: inline-block
+		text-decoration: none
+		img	
+			fill: $grey
+			transition: 1s
+			margin-right: 20px
+			stroke: $grey
+	a:hover
+		font-weight: bold
+		font-size: 14px
+		line-height: normal
+		color: $shop-phone
+		img	
+			fill: $shop-phone
+			stroke: $shop-phone
+
+.presonal-block-line
+	margin: 20px 0px
+
+.form-row-label
+	font-weight: normal
+	font-size: 13px
+	line-height: normal
+	color: $grey
+	margin-bottom: 20px
+	margin-top: 0px !important
+
+.personal-info-form
+	margin-left: 100px
+	label
+		font-weight: normal
+		font-size: 13px
+		line-height: normal
+		color: $grey
+		margin-bottom: 20px
+		margin-top: 40px
+	.form-group
+		margin-bottom: 0px
+		input
+			margin-bottom: 20px
+			border: 1px solid #CCCCCC !important
+			border-radius: 2px
+			font-weight: normal
+			font-size: 14px !important
+			line-height: normal
+			text-indent: 20px
+			font-feature-settings: 'pnum' on, 'lnum' on
+			color: $number !important 
+			outline: none
+		input:focus
+			box-shadow: none
+			outline: none	
+	.form-personal-info-btn
+		background: $header_icons
+		border-radius: 100px
+		border: 1px solid $header_icons
+		font-weight: bold
+		font-size: 14px
+		line-height: normal
+		text-align: center
+		color: #FFFFFF
+		padding: 10px 30px
+		margin-top: 15px
+
+.label-personal
+	font-weight: normal
+	font-size: 13px
+	line-height: normal
+	color: $grey	
+	margin-left: 30px
+
+.personal-info-discount	
+	margin-left: 30px
+	background: #EEEEEE
+	border-radius: 4px
+	width: calc(100% - 30px)
+	padding: 30px
+	text-align: center
+	p:first-child
+		width: 50%
+		float: left
+		font-weight: normal
+		font-size: 14px
+		line-height: 18px
+		color: $grey
+		span	
+			font-weight: bold
+			font-size: 18px
+			line-height: 18px
+			color: $grey
+			display: block
+	p	
+		font-weight: normal
+		font-size: 14px
+		line-height: 18px
+		color: $grey
+		span	
+			font-weight: bold
+			font-size: 18px
+			line-height: 18px
+			color: $grey
+			display: block
+	img
+		display: block
+		margin: 10px auto	30px
+	a
+		font-weight: normal
+		font-size: 14px
+		line-height: normal
+		color: $menu_link
+		display: inline-block	
+		margin: 0px 10px 0px
+	a:last-child
+		border: 1px solid #CCCCCC
+		border-radius: 100px
+		padding: 10px 30px		
+		
+/* Personal-info */	
+
+/* Personal-order */
+.personal-order
+	margin: 30px 165px 100px
+
+.personal-order-list
+	margin-left: 65px
+	.personal-order-list-one
+		border: 1px solid #DDDDDD
+		box-sizing: border-box
+		border-radius: 4px
+		margin-bottom: 30px
+		.personal-order-list-head
+			background: #EEEEEE
+			border-bottom: 1px solid #DDDDDD
+			box-sizing: border-box
+			p:first-child
+				padding: 15px 20px 15px 40px
+			p
+				display: inline-block
+				margin-bottom: 0px
+				padding: 15px 0px
+				font-weight: normal
+				font-size: 14px
+				line-height: normal
+				color: $grey
+				span
+					font-weight: bold
+					color: $menu_link
+			p:last-child
+				padding: 9px 40px 9px 20px
+				float: right
+				font-weight: bold
+				font-size: 24px
+				line-height: normal
+				color: $number
+				span
+					font-weight: normal
+					color: $grey
+		.personal-order-list-body
+			padding: 25px 40px
+			.personal-order-list-body-addres
+				font-weight: normal
+				font-size: 14px
+				line-height: normal
+				color: $grey
+				width: 40%
+				margin-right: 60px
+				float: left
+				margin-bottom: 0px
+			.personal-order-one-list
+				display: inline-block
+				margin-bottom: 20px
+				border-bottom: 1px dashed #aaaaaa
+				z-index: -1
+				width: 50%
+				position: relative
+				p
+					font-weight: normal
+					position: absolute
+					font-size: 14px
+					line-height: normal
+					color: $number
+					margin-bottom: 0px
+				span	
+					right: 0px
+					position: absolute
+					display: inline-block
+					font-weight: bold
+					font-size: 18px
+					line-height: normal
+					text-align: right
+					color: $menu_link
+					background: #fff
+		.personal-order-list-btn
+			border-top: 1px solid #DDDDDD
+			box-sizing: border-box
+			text-align: center
+			padding: 15px 0px	
+/* Personal-order */							
 
 
 

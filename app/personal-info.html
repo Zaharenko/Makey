@@ -109,57 +109,94 @@
     </nav>
     <!--END Menu-->
 
-    <!--Discount-->
-    <section class="discount-one-product">
+    <!--Personal-info-->
+    <section class="personal-info">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="title-page">Дисконтные карты</h2>
+                    <h2 class="title-page">Личные данные</h2>
                     <div class="breadcrams">
                         <a href="#">Главная</a>
-                        <a href="#">Дисконтные карты</a>
+                        <a href="#">Мой кабинет</a>
+                        <a href="#">Личные данные</a>
                     </div>
                 </div>
             </div>
-            <div class="row discount-one-info">
-                <div class="col-lg-6">
-                    <h3 class="title-info">Дисконтная программа Макей</h3>
-                    <p class="title-info-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Contrary to popular belief, Lorem Ipsum
-                        is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
-                        obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                        Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                        comes from a line in section </p>
+            <div class="row personal-block">
+                <div class="col-lg-3">
+                    <div class="personal-block-change">
+                        <a href="personal-info.html">
+                            <img src="img/icons/profile.svg" alt=""> Личные данные
+                        </a>
+                        <hr class="presonal-block-line">
+                        <a href="personal-orders.html">
+                            <img src="img/icons/orders.svg" alt=""> История заказов
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="img/certificates/discount/cards.png" alt="">
-                </div>
-            </div>
-            <div class="row discount-one-form">
-                <div class="col-lg-6">
-                    <h4 class="title-info">Дисконтная программа Макей</h4>
-                    <p class="title-info-desc">Вы можете связаться с ннами, оставив свои контактные данные</p>
-                </div>
-                <div class="col-lg-6">
-                    <form class="form-discount">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Имя*" required>
+                <div class="col-lg-9">
+                    <div class="row personal-info-title">
+                        <div class="col-lg-6">
+                            <form class="personal-info-form">
+                                <label class="form-row-label">Персональные данные</label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Висилий Петров">
+                                    <input type="tel" class="form-control" placeholder="+375 29 666 66 66">
+                                    <input type="email" class="form-control" placeholder="name@example.com">
+                                </div>
+                                <div class="form-row">
+                                    <label>Адрес по умолчанию</label>
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" placeholder="Страна">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" placeholder="Город ">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" placeholder="Улица">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Дом">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Корпус">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Индекс">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Корпус">
+                                    </div>
+                                </div>
+                                <label>Пароль</label>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Старый пароль">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Новый пароль">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Повторите новый пароль">
+                                </div>
+                                <button type="submit" class="btn btn-primary form-personal-info-btn">Принять изменения</button>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <input type="tel" class="form-control phone" id="exampleInputTel" placeholder="Номер телефона*" required>
+                        <div class="col-lg-6">
+                            <p class="label-personal">Дисконтная программа</p>
+                            <div class="personal-info-discount">
+                                <p>Номер карты: <span>372GSRT3</span></p>
+                                <p>Ваша скидка: <span>5%</span></p>
+                                <img src="img/certificates/card/image.png" alt="">
+                                <a href="">Удалить карту</a>
+                                <a href="">Изменить</a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Комментарий"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary form-discount-btn">Отправить</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--END Discount-->
+    <!--END Personal-info-->
 
     <!--Footer-->
     <footer>

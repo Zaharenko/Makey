@@ -37,3 +37,50 @@
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #BBBBBB !important;
 }
+
+.col-xs-five,
+.col-sm-five,
+.col-md-five,
+.col-lg-five,
+.col-xl-five {
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-xs-five {
+    width: 20%;
+    float: left;
+}
+
+.col-lg-five .shop-addres-one-info:first-child {
+    margin-top: 70px;
+}
+
+@media (min-width: 640px) {
+    .col-sm-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .col-lg-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1440px) {
+    .col-xl-five {
+        width: 20%;
+        float: left;
+    }
+}

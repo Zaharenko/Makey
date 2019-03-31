@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     //Mask for phone
     $(function() {
-        $("#phone").mask("+999-(99)-999-99-99");
+        $(".phone").mask("+999 (99) 999-99-99");
     });
 
     // Animate WOW
