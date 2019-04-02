@@ -264,7 +264,7 @@ b, strong
 		line-height: normal
 		text-decoration-line: underline
 		text-transform: capitalize
-		color: #CCCCCC
+		color: $grey-light
 
 .slick-dots
     bottom: 20px !important
@@ -273,11 +273,11 @@ b, strong
 .slick-dots li button
 		width: 10px !important
 		height: 10px !important
-		border: 1px solid #cccccc !important
+		border: 1px solid $grey-light !important
 		border-radius: 100px !important
 
 .slick-dots .slick-active button
-		background: #cccccc !important	
+		background: $grey-light !important	
 
 .slick-prev
   left: 30px
@@ -294,7 +294,7 @@ b, strong
     content: url('../img/top-slider/prev.svg')	
 
 .slick-dots li button:before
-  color: #cccccc !important					
+  color: $grey-light !important					
 /* Top slick slider */	
 
 /* About Product */	
@@ -584,7 +584,7 @@ ul.tabs li
 
 .line-cart
 	margin: 0px 30px
-	background: #CCCCCC	
+	background: $grey-light	
 
 .button-open
 	font-weight: bold
@@ -592,7 +592,7 @@ ul.tabs li
 	line-height: normal
 	text-align: center
 	color: #AAAAAA
-	border: 1px solid #CCCCCC
+	border: 1px solid $grey-light
 	box-sizing: border-box
 	border-radius: 100px
 	display: inline-block
@@ -613,7 +613,7 @@ footer
 	font-weight: normal
 	font-size: 14px
 	line-height: normal
-	color: #CCCCCC
+	color: $grey-light
 .footer-info-block
 	float: right
 	text-align: right	
@@ -1062,7 +1062,7 @@ footer
 	padding: 35px 95px 40px
 
 .discount-one
-	border: 1px solid #CCCCCC
+	border: 1px solid $grey-light
 	box-sizing: border-box
 	border-radius: 4px
 	min-height: 220px
@@ -1072,7 +1072,7 @@ footer
 		max-width: 255px
 		max-height: 220px
 		float: left
-		border-right: 1px solid #CCCCCC
+		border-right: 1px solid $grey-light
 		margin-right: 40px
 	p	
 		margin-bottom: 0px
@@ -1127,7 +1127,7 @@ footer
 	.form-control:focus
 		box-shadow: none
 	.form-group
-		border: 1px solid #CCCCCC
+		border: 1px solid $grey-light
 		border-radius: 2px
 		outline: none
 		max-width: 350px
@@ -1161,7 +1161,7 @@ footer
 	padding: 35px 95px 40px
 
 .blog-one
-	border: 1px solid #CCCCCC
+	border: 1px solid $grey-light
 	box-sizing: border-box
 	border-radius: 4px
 	min-height: 220px
@@ -1171,7 +1171,7 @@ footer
 		max-width: 255px
 		max-height: 220px
 		float: left
-		border-right: 1px solid #CCCCCC
+		border-right: 1px solid $grey-light
 		margin-right: 40px
 	p	
 		margin-bottom: 0px
@@ -1265,7 +1265,7 @@ footer
 	margin-top: 40px
 	img
 		width: 100%
-		border: 1px solid #CCCCCC
+		border: 1px solid $grey-light
 		box-sizing: border-box
 		border-radius: 8px
 	p
@@ -1295,6 +1295,15 @@ footer
 .collection  .cart-product__one
 	margin-bottom: 80px 	
 /* Collections */	
+
+/* Collection */	
+.collection-one-block
+	.search-sidebar
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16)
+		border-radius: 2px
+		padding: 10px 30px 0px
+		max-width: 260px
+/* Collection */		
 
 /* Subcategory */
 .subcategory
@@ -1376,6 +1385,19 @@ footer
 /* Search page */
 .search-page
 	margin: 30px 165px 100px
+	.breadcrams
+		display: inline-block
+	.search-page-calc
+		display: inline-block
+		float: right
+		p
+			font-weight: normal
+			font-size: 14px
+			line-height: normal
+			color: $shop-phone
+			margin-bottom: 0px
+			span
+				font-weight: bold	
 
 .search-block
 	margin-top: 40px
@@ -1392,9 +1414,9 @@ footer
 		list-style-type: none
 		a
 			font-weight: bold
-			font-size: 16px
+			font-size: 14px
 			line-height: 36px
-			color: $number
+			color: $menu_link
 
 .search-one
 	text-align: center
@@ -1406,10 +1428,11 @@ footer
 		margin: 0px auto
 	.search-one-price
 		font-weight: bold
-    font-size: 18px
-    line-height: normal
-    color: $header_icons
+		font-size: 18px
+		line-height: normal
+		text-align: left
 		padding: 0px 30px
+		color: $header_icons
 		span	
 			text-decoration-line: line-through
 			color: $grey
@@ -1488,7 +1511,7 @@ footer
 		margin-bottom: 0px
 		input
 			margin-bottom: 20px
-			border: 1px solid #CCCCCC !important
+			border: 1px solid $grey-light !important
 			border-radius: 2px
 			font-weight: normal
 			font-size: 14px !important
@@ -1561,7 +1584,7 @@ footer
 		display: inline-block	
 		margin: 0px 10px 0px
 	a:last-child
-		border: 1px solid #CCCCCC
+		border: 1px solid $grey-light
 		border-radius: 100px
 		padding: 10px 30px		
 		
@@ -1830,7 +1853,7 @@ footer
 		margin-bottom: 0px
 		span
 			float: right
-			color: #CCCCCC
+			color: $grey-light
 	.offer-cart-devivery
 		font-weight: normal
 		font-size: 14px
@@ -1896,7 +1919,7 @@ footer
 
 .collapse 
 	.form-control
-		border: 1px solid #CCCCCC !important
+		border: 1px solid $grey-light !important
 		box-sizing: border-box !important
 		border-radius: 2px !important
 		font-weight: normal !important
@@ -2007,6 +2030,33 @@ footer
 		width: 100%	
 		object-fit: cover
 					
+.basket-pay
+	padding: 25px 30px
+	p
+		margin-bottom: 0px
+	.basket-pay-name
+		font-weight: normal
+		font-size: 13px
+		line-height: normal
+		color: $grey
+		padding-bottom: 25px
+	.form-check-label
+		font-weight: normal
+		font-size: 14px
+		line-height: 30px
+		color: $menu_link
+		margin: 0 10px 10px 0
+		input
+			width: 18px
+			height: 18px
+
+.cart-pay-text
+	font-weight: normal
+	font-size: 14px
+	line-height: 24px
+	color: $menu_link
+	p:first-child
+		padding-bottom: 30px			
 
 
 
@@ -2017,7 +2067,7 @@ footer
 		margin-bottom: 0px
 		textarea
 			background: #FFFFFF !important
-			border: 1px dashed #CCCCCC !important
+			border: 1px dashed $grey-light !important
 			box-sizing: border-box
 			border-radius: 4px !important
 			display: inline-block !important
@@ -2026,7 +2076,17 @@ footer
 		textarea:focus
 			box-shadow: none !important
 			outline: none !important	
-/* Basket */									
+/* Basket */	
+
+/* Favourites */	
+.favourites-one
+	margin-bottom: 40px
+	.favorites-icon
+		background: $header_icons !important
+	.favi
+		background: #EEEEEE !important	
+
+/* Favourites */									
 
 
 
