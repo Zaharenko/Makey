@@ -7,6 +7,11 @@
 	transition: 1s
 	font-family: $default-font
 
+input:focus
+	box-shadow: none !important
+	outline: none !important
+
+
 input:focus::-webkit-input-placeholder
   color: transparent
 
@@ -21,6 +26,21 @@ input:focus:-moz-placeholder
  
 input:focus:-ms-input-placeholder
   color: transparent
+
+textarea:focus::-webkit-input-placeholder
+  color: transparent
+
+ 
+textarea:focus::-moz-placeholder
+  color: transparent
+
+ 
+textarea:focus:-moz-placeholder
+  color: transparent
+
+ 
+textarea:focus:-ms-input-placeholder
+  color: transparent		
 
 
 ::selection
@@ -865,6 +885,8 @@ footer
 
 #target-service-one
 	display: none	
+	div
+		float: left
 .service-one-info
 	position: relative
 
@@ -891,7 +913,7 @@ footer
 	text-align: right
 	color: $number
 	position: relative
-	outline: none
+	outline: none !important
 
 .all-works-service:after
 	content: url('../img/icons/all-works-service.svg')		
@@ -925,9 +947,13 @@ footer
 
 .payment-types-webpay	
 	margin-bottom: 80px
+	.payment-types-info
+		margin-top: 100px
 
 .payment-types-erip
 	margin-bottom: 80px	
+	.payment-types-info
+		margin-top: 100px
 	
 .payment-types-halva
 	margin-bottom: 80px	
@@ -973,7 +999,7 @@ footer
 	margin-top: 85px				
 
 .payment-types-info
-	margin-top: 100px
+	margin-top: 90px
 	margin-bottom: 0px
 	font-weight: normal
 	font-size: 14px
@@ -1239,13 +1265,24 @@ footer
 	margin-top: 40px
 	img
 		width: 100%
+		border: 1px solid #CCCCCC
+		box-sizing: border-box
+		border-radius: 8px
 	p
 		margin-bottom: 0px
 	.blog-one-title
 		margin-top: 0px	
 	a
 		margin-top: 40px
-		dis				
+		display: inline-block
+		background: $header_icons
+		border-radius: 100px
+		font-weight: bold
+		font-size: 14px
+		line-height: normal
+		text-align: center
+		color: #FFFFFF
+		padding: 10px 30px		
 /* Article */	
 
 /* Collections */	
@@ -1575,40 +1612,421 @@ footer
 				font-size: 14px
 				line-height: normal
 				color: $grey
-				width: 40%
 				margin-right: 60px
-				float: left
 				margin-bottom: 0px
+				float: left
 			.personal-order-one-list
 				display: inline-block
-				margin-bottom: 20px
-				border-bottom: 1px dashed #aaaaaa
-				z-index: -1
-				width: 50%
-				position: relative
 				p
 					font-weight: normal
-					position: absolute
 					font-size: 14px
 					line-height: normal
 					color: $number
 					margin-bottom: 0px
-				span	
-					right: 0px
-					position: absolute
 					display: inline-block
+					padding-right: 100px
+				// span:before
+				// 	content: "................................................."
+				// 	position: absolute
+				// 	padding-right: 100px
+				span
 					font-weight: bold
 					font-size: 18px
 					line-height: normal
-					text-align: right
 					color: $menu_link
 					background: #fff
+					display: inline-block
 		.personal-order-list-btn
 			border-top: 1px solid #DDDDDD
 			box-sizing: border-box
 			text-align: center
-			padding: 15px 0px	
-/* Personal-order */							
+			button
+				padding: 15px 0px	
+				position: relative
+				padding-right: 10px
+				background: transparent !important
+				border: none !important
+				outline: none
+				font-weight: bold
+				font-size: 14px
+				line-height: normal
+				color: $grey
+			button:after
+				position: absolute
+				content: url(../img/icons/order-down.svg)
+				width: 12px
+				right: -10px
+
+
+.personal-list
+	width: 50%	
+	margin-left: 50%
+	text-align: right	
+	li
+		padding: 10px 0px	10px
+	li:first-child
+		padding: 0px 0px	10px
+	li:last-child
+		padding: 10px 0px	0px	
+
+.order-all-btn
+	text-align: center
+	margin-top: 30px
+	background: transparent
+	border: none
+	outline: none
+	font-weight: bold
+	font-size: 14px
+	line-height: normal
+	color: $number
+	position: relative
+.order-all-btn:after
+	position: absolute
+	content: url(../img/icons/order-down-all.svg)
+	width: 12px
+	right: -15px			
+/* Personal-order */
+
+/* Basket */	
+.basket
+	margin: 30px 165px 100px
+
+.rotate-chevron
+	transform: rotate(180deg) !important
+
+.card
+	border: 1px solid #DDDDDD !important
+	border-radius: 4px !important
+	margin-bottom: 40px
+	.card-header
+		background: #EEEEEE !important
+		padding: 15px 30px
+		border-bottom: none !important
+		span
+			font-weight: bold
+			font-size: 24px
+			line-height: normal
+			color: $shop-phone
+		button
+			float: right
+			padding: 0px !important
+			border: none !important	
+			img
+				transform: rotate(0deg)
+	.card-body
+		padding: 0px !important			
+		.card-body-delete
+			text-align: right
+			padding: 15px 30px
+			border-bottom: 1px solid #DDDDDD
+			p
+				margin-bottom: 0px
+				font-weight: normal
+				font-size: 13px
+				line-height: normal
+				color: $grey
+				float: left
+			a
+				font-weight: normal
+				font-size: 13px
+				line-height: normal
+				text-decoration-line: underline
+				color: $grey
+				display: inherit
+				img
+					margin-left: 10px
+		.car-body-product:last-child
+			border-bottom: none
+
+		.car-body-product
+			padding: 30px 0px
+			margin-left: 30px
+			margin-right: 30px
+			position: relative
+			border-bottom: 1px solid #DDDDDD
+			p
+				margin-bottom: 0px
+			.car-body-product-photo
+				float: left
+				object-fit: cover
+				margin-right: 30px
+				border-radius: 4px
+				min-height: 100px
+				max-height: 100px
+			.car-body-product-name
+				font-weight: bold
+				font-size: 18px
+				line-height: normal
+				color: $number
+				margin-bottom: 5px
+			.car-body-product-articel
+				font-weight: normal
+				font-size: 14px
+				line-height: normal
+				color: $grey
+				span
+					font-weight: bold	
+			.car-body-product-color
+				margin-top: 35px
+				font-weight: normal
+				font-size: 14px
+				line-height: normal
+				color: $grey
+				span:first-child
+					background: #FFFFFF
+					box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1)
+					border-radius: 100px
+					padding: 1px 10px
+					margin: 0px 5px
+				span:last-child
+					font-weight: bold
+			.car-body-product-right
+				position: absolute
+				top: 30px
+				right: 0px
+				text-align: right
+				a
+					font-weight: normal
+					font-size: 14px
+					line-height: normal
+					color: $grey
+					display: inline-block
+					margin-bottom: 30px
+					span
+						background: #EEEEEE
+						margin-left: 10px
+						border-radius: 100px
+						width: 24px
+						height: 24px
+						display: inline-block
+						text-align: center
+						img
+							padding: 7px
+				.car-body-product-calc
+					font-weight: normal
+					font-size: 13px
+					line-height: normal
+					color: $grey
+					span
+						font-weight: bold
+				.car-body-product-total
+					font-weight: bold
+					font-size: 24px
+					line-height: normal
+					color: $grey 	
+					span
+						color: $number	
+
+
+.offer-cart
+	background: #EEEEEE
+	border-radius: 4px
+	.offer-cart-name
+		font-weight: bold
+		font-size: 18px
+		line-height: normal
+		color: $menu_link
+		padding: 35px 40px
+		margin-bottom: 0px
+		span
+			float: right
+			color: #CCCCCC
+	.offer-cart-devivery
+		font-weight: normal
+		font-size: 14px
+		line-height: normal
+		color: $menu_link
+		padding: 0px 40px 30px
+		position: relative
+		margin-bottom: 0px
+		span
+			position: absolute
+			right: 40px
+			bottom: 26px
+			font-weight: bold
+			font-size: 24px
+			line-height: normal
+			color: $menu_link
+	.offer-cart-sale
+		background: #DDDDDD
+		padding: 15px 40px	
+		.offer-sale
+			font-weight: normal
+			font-size: 14px
+			line-height: normal
+			color: $menu_link
+			position: relative
+			margin-bottom: 0px
+			padding: 15px 0px
+			span
+				position: absolute
+				right: 0px
+				bottom: 10px
+				font-weight: bold
+				font-size: 24px
+				line-height: normal
+				color: $menu_link
+	.offer-cart-all
+		font-weight: bold
+		font-size: 18px
+		line-height: normal
+		color: $menu_link
+		padding: 30px 40px
+		margin-bottom: 0px	
+		span
+			font-weight: bold
+			font-size: 24px
+			line-height: normal
+			text-align: right
+			color: $number		
+			position: absolute
+			right: 55px
+	button
+		background: $header_icons
+		border: 1px solid $header_icons
+		border-radius: 0px 0px 4px 4px
+		font-weight: bold
+		font-size: 15px
+		line-height: normal
+		text-align: center
+		color: #FFFFFF
+		padding: 20px
+		width: 100%
+		display: inline-block
+
+.collapse 
+	.form-control
+		border: 1px solid #CCCCCC !important
+		box-sizing: border-box !important
+		border-radius: 2px !important
+		font-weight: normal !important
+		font-size: 14px !important
+		line-height: normal !important
+		text-indent: 20px !important
+		font-feature-settings: 'pnum' on, 'lnum' on !important
+		color: #BBBBBB !important
+		min-width: 320px
+
+.card-delivery-info
+	padding: 30px
+	.card-delivery-info-left
+		float: left
+		margin-right: 50px
+		min-width: 320px
+		.card-delivery-info-title
+			font-weight: normal
+			font-size: 13px
+			line-height: normal
+			color: $grey
+		.form-group
+			margin-bottom: 20px	
+	.card-delivery-info-rigth
+		margin: 30px 0px 30px 0px
+		font-weight: bold
+		font-size: 14px
+		line-height: normal
+		color: $menu_link
+	.card-delivery-info-right-text
+		font-weight: normal
+		font-size: 14px
+		line-height: normal
+		color: $menu_link
+		margin-bottom: 0px	
+			
+.card-delivery-type
+	margin: 60px 0px
+	border-top: 1px solid #DDDDDD
+	.card-delivery-info-title
+		font-weight: normal
+		font-size: 13px
+		line-height: normal
+		color: $grey
+		padding: 25px 30px	
+	.nav-tabs
+		margin: 0px 30px
+		border-bottom: none
+		.nav-link
+			border-bottom: 1px solid #DDDDDD
+			font-weight: bold
+			font-size: 16px
+			line-height: normal
+			color: $grey
+			img
+				margin-right: 15px
+	.tab-content
+		.basket-delivery-city
+			margin: 30px 0px 0px
+			font-weight: bold
+			font-size: 14px
+			line-height: 30px
+			color: $menu_link
+		.form-check-label
+			margin: 0px 10px 10px 0px
+			font-weight: normal
+			font-size: 14px
+			line-height: 30px
+			color: $menu_link
+			input
+				width: 18px
+				height: 18px
+		.active-label	
+			font-weight: bold
+			color: $number
+
+.dop-info
+	border: 1px solid #DDDDDD
+	border-radius: 4px
+	margin-top: 60px
+	.dop-info-contact
+		padding: 20px 30px	
+		p
+			font-weight: normal
+			font-size: 13px
+			line-height: 18px
+			color: $menu_link
+			margin-bottom: 0px
+		span
+			font-weight: normal
+			font-size: 13px
+			line-height: 18px
+			color: $menu_link
+			margin-bottom: 0px
+			display: block
+		.dop-info-contact-phone
+			margin-top: 30px
+		a
+			font-weight: bold
+			font-size: 16px
+			line-height: 18px
+			color: $header_icons
+			margin-bottom: 0px
+			display: block	
+	img
+		max-height: 160px	
+		min-height: 160px	
+		width: 100%	
+		object-fit: cover
+					
+
+
+
+
+
+.comment-product
+	.form-group
+		margin-bottom: 0px
+		textarea
+			background: #FFFFFF !important
+			border: 1px dashed #CCCCCC !important
+			box-sizing: border-box
+			border-radius: 4px !important
+			display: inline-block !important
+			width: 100% !important
+			margin-top: 10px
+		textarea:focus
+			box-shadow: none !important
+			outline: none !important	
+/* Basket */									
 
 
 

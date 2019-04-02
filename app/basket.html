@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Makey</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+    <!--Section Top Header-->
+    <section class="top_header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="/" class="top_header__logo">
+                        <img src="img/logo/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="text-center col-lg-4">
+                    <a href="tel:+375447010107" class="top_header__phone">+375 (44) 701-01-07</a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="top_header__buttons">
+                        <a href="#">Зарегистрироваться</a>
+                        <a href="#">Вход</a>
+                        <span class="top_header__buttons__favorites">
+              <a href="#">
+                <img src="img/icons/header/ico-favorites.svg" alt="favorites">
+              </a>
+              <span>23</span>
+                        </span>
+                        <span class="top_header__buttons__basket">
+              <a href="#">
+                <img src="img/icons/header/ico-basket.svg" alt="basket">
+              </a>
+              <span>0</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END Section Top Header-->
+
+    <!--Menu-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light bg-custom">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Оплата</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Коллекции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Подарочные сертификаты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Блог</a>
+                    </li>
+                </ul>
+                <div class="d-flex w-100 justify-content-end order-3 header-search">
+                    <form class="d-flex flex-nowrap align-items-center">
+                        <input class="form-control border-right-0 mr-n1" type="search" placeholder="Поиск по каталогу" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">
+              <img src="img/icons/header/ico-search.svg" alt="search">
+            </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--END Menu-->
+
+    <!--Basket-->
+    <section class="basket">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title-page">Коризина</h2>
+                    <div class="breadcrams">
+                        <a href="#">Главная</a>
+                        <a href="#">Коризина</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row basket-block">
+                <div class="col-lg-7">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <span>Товары</span>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <img src="img/icons/chevron.svg" alt="">
+                  </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="card-body-delete">
+                                        <p>У Вас в корзине <span>3</span> товара</p>
+                                        <a href="#">
+                      Очистить корзину
+                      <img src="img/icons/clear.svg" alt="">
+                    </a>
+                                    </div>
+                                    <div class="car-body-product">
+                                        <img src="img/basket/image.jpg" alt="" class="car-body-product-photo">
+                                        <p class="car-body-product-name">Ежедневник Black 008-08-47</p>
+                                        <p class="car-body-product-articel">Артикул: <span>282110</span></p>
+                                        <p class="car-body-product-color">Цвет:
+                                            <span></span>
+                                            <span>Белый</span>
+                                        </p>
+                                        <div class="car-body-product-right">
+                                            <a href="#">Удалить
+                        <span>
+                          <img src="img/icons/x.svg" alt="">
+                        </span>
+                      </a>
+                                            <p class="car-body-product-calc">2x<span>24BYN</span></p>
+                                            <p class="car-body-product-total"><span>57</span> BYN</p>
+                                        </div>
+                                    </div>
+                                    <div class="car-body-product">
+                                        <img src="img/basket/image.jpg" alt="" class="car-body-product-photo">
+                                        <p class="car-body-product-name">Ежедневник Black 008-08-47</p>
+                                        <p class="car-body-product-articel">Артикул: <span>282110</span></p>
+                                        <p class="car-body-product-color">Цвет:
+                                            <span></span>
+                                            <span>Белый</span>
+                                        </p>
+                                        <div class="car-body-product-right">
+                                            <a href="#">Удалить
+                        <span>
+                          <img src="img/icons/x.svg" alt="">
+                        </span>
+                      </a>
+                                            <p class="car-body-product-calc">2x<span>24BYN</span></p>
+                                            <p class="car-body-product-total"><span>57</span> BYN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <span>Доставка</span>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <img src="img/icons/chevron.svg" alt="">
+                  </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="card-delivery-info">
+                                        <div class="card-delivery-info-left">
+                                            <p class="card-delivery-info-title">Персональные данные</p>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Имя">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control phone" placeholder="Телефон">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="email">
+                                            </div>
+                                        </div>
+                                        <div class="card-delivery-info-right">
+                                            <label class="container1 card-delivery-info-rigth">Создать личный кабинет на основе<br> введенных
+                        данных
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                                            <p class="card-delivery-info-right-text">Личный кабинет будет создан по завершению заказа, а пароль выслан на указанную электронную почту</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-delivery-type">
+                                        <p class="card-delivery-info-title">Адрес доставки</p>
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="#home">
+                                                    <img src="img/icons/basket/shops.svg"> Самовывоз
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#menu1">
+                                                    <img src="img/icons/basket/courier.svg">Доставка курьером</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#menu2">
+                                                    <img src="img/icons/basket/post.svg">Доставка почтой</a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active container" id="home">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <p class="basket-delivery-city">Могилев</p>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio"> Салон-магазин,
+                                  ул.Пионерская, 33
+                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio">Цум, 2-й этаж,
+                                  ул.Первомайская, 61
+                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio">ТЦ «Планета Green»,
+                                  ул.Островского, 5
+                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio">ТРЦ «Парк-Сити», Минское
+                                  шоссе, 31
+                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio">Салон-магазин, ул.
+                                  Первомайская, 46
+                                </label>
+                                                            </div>
+                                                            <p class="basket-delivery-city">Бобруйск</p>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio"> ТЦ «Корона», ул. 50 лет ВЛКСМ, 33-3
+                                </label>
+                                                            </div>
+                                                            <p class="basket-delivery-city">Барановичи</p>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio"> ТРЦ «Центральный», ул.Советская, 74А
+                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio"> ТРЦ «Светиловский», пр-т Советский, 35
+                                </label>
+                                                            </div>
+                                                            <p class="basket-delivery-city">Минск</p>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio"> Салон-магазин, пр-т Независимости, 12
+                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio"> Салон-магазин, ТЦ "Титан", пр-т Дзержинского, 104
+                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="dop-info">
+                                                                <div class="dop-info-contact">
+                                                                    <p>Время работы:</p>
+                                                                    <span>пн-пт с 9:00 до 21:00</span>
+                                                                    <span>сб с 9:00 до 20:00</span>
+                                                                    <span>вс с 9:00 до 19:00</span>
+                                                                    <p class="dop-info-contact-phone">Контактный телефон:</p>
+                                                                    <a href="tel:+375291565660">+375(29)156-56-60</a>
+                                                                </div>
+                                                                <img src="img/map.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane container" id="menu1">Нет информации</div>
+                                            <div class="tab-pane container" id="menu2">Нет информации</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <span>Оплата</span>
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <img src="img/icons/chevron.svg" alt="">
+                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-product">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Оставьте Ваш комментарий, если это необходимо"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="offer-cart">
+                        <p class="offer-cart-name">Стоимость<span>BYN</span></p>
+                        <p class="offer-cart-devivery">Товары<span>66</span></p>
+                        <p class="offer-cart-devivery">Доставка<span>6</span></p>
+                        <div class="offer-cart-sale">
+                            <p class="offer-sale">Скидка по акции (-10%)<span>- 5,7</span></p>
+                            <p class="offer-sale">Дисконтная карта (-5%)<span>- 2,85</span></p>
+                        </div>
+                        <p class="offer-cart-all">Итого<span>65,31</span></p>
+                        <button>Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!--END Basket-->
+
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row footer-wrapper">
+                <div class="col-lg-2">
+                    <ul>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Коллекции</a>
+                        </li>
+                        <li>
+                            <a href="#">Сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Наши магазины</a>
+                        </li>
+                        <li>
+                            <a href="#">Дисконтные карты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer-info-block">
+                        <div class="time-work">
+                            <p class="footer-wrapper-title">Время работы:</p>
+                            <p>Пн.-Пт.: с 10:00 до 20:00</p>
+                            <p>Сб.-Вс.: с 10:00 до 19:00</p>
+                        </div>
+                        <div class="mobile-question">
+                            <p class="footer-wrapper-title">По всем вопросам:</p>
+                            <a href="tel:+375447010107">+375 (44) 701-01-07</a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#">
+                                <img src="img/icons/social/ico-vk.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/icons/social/ico-insta.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Info Footer-->
+            <div class="row footer-wrapper-mini">
+                <div class="col-lg-6">ЧТУП "Макей Могилев" РБ, г. Могилев, ул. Пионерская, 33</div>
+                <div class="col-lg-6">
+                    <div class="payments">
+                        <img src="img/icons/payments/webpay.png" alt="">
+                        <img src="img/icons/payments/belcard.png" alt="">
+                        <img src="img/icons/payments/calculation.png" alt="">
+                        <img src="img/icons/payments/mastercard.png" alt="">
+                        <img src="img/icons/payments/minivisa.png" alt="">
+                        <img src="img/icons/payments/visa.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--END Info Footer-->
+        </div>
+    </footer>
+    <!-- END Footer-->
+
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

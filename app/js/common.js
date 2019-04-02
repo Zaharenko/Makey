@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    $('.remove-before-release').click(function() {
+        $(".remove-before-release-list").toggleClass('release-list');
+    });
+
+    $('.card-header button img').click(function() {
+        $(this).toggleClass('rotate-chevron');
+    });
+
+    $('input[type="radio"]').click(function() {
+        $(this).parents(".form-check-label").toggleClass("active-label");
+    });
+
     // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
     $(".tab_content").hide();
