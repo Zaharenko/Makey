@@ -48,16 +48,16 @@
                         <a href="#">Зарегистрироваться</a>
                         <a href="#">Вход</a>
                         <span class="top_header__buttons__favorites">
-              <a href="#">
-                <img src="img/icons/header/ico-favorites.svg" alt="favorites">
-              </a>
-              <span>23</span>
+                            <a href="#">
+                                <img src="img/icons/header/ico-favorites.svg" alt="favorites">
+                            </a>
+                            <span>3</span>
                         </span>
                         <span class="top_header__buttons__basket">
-              <a href="#">
-                <img src="img/icons/header/ico-basket.svg" alt="basket">
-              </a>
-              <span>0</span>
+                            <a href="#">
+                                <img src="img/icons/header/ico-basket.svg" alt="basket">
+                            </a>
+                            <span>0</span>
                         </span>
                     </div>
                 </div>
@@ -70,8 +70,8 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-light bg-custom">
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse text-center" id="navbarsExample11">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -103,8 +103,8 @@
                     <form class="d-flex flex-nowrap align-items-center">
                         <input class="form-control border-right-0 mr-n1" type="search" placeholder="Поиск по каталогу" aria-label="Search">
                         <button class="btn btn-outline-secondary" type="submit">
-              <img src="img/icons/header/ico-search.svg" alt="search">
-            </button>
+                            <img src="img/icons/header/ico-search.svg" alt="search">
+                        </button>
                     </form>
                 </div>
             </div>
@@ -200,52 +200,58 @@
             <div class="row product-table">
                 <div class="col-lg-6">
                     <div class="product-table-table">
-                        <span>1</span>
+                        <span>Характеристики товара</span>
                         <table>
                             <tr>
-                                <td>Ассорти из овощей, зелени и сыра</td>
-                                <td>250</td>
-                                <td>190</td>
+                                <td>Коллекция</td>
+                                <td>Black</td>
                             </tr>
                             <tr>
-                                <td>Ассорти мясное</td>
-                                <td>250</td>
-                                <td>300</td>
+                                <td>Материал</td>
+                                <td>натуральная кожа</td>
                             </tr>
                             <tr>
-                                <td>Ассорти рыбное (семга с/с, форель с/с)</td>
-                                <td>250</td>
-                                <td>350</td>
+                                <td>Назначение</td>
+                                <td>для него, для неё</td>
                             </tr>
                             <tr>
-                                <td>Ассорти грибное</td>
-                                <td>120</td>
-                                <td>150</td>
+                                <td>Тип</td>
+                                <td>ежедневник</td>
                             </tr>
                             <tr>
-                                <td>Соления из бочки (помидоры, огурцы, перец, чеснок, капуста)</td>
-                                <td>250</td>
-                                <td>180</td>
+                                <td>Художественная вставка</td>
+                                <td>декоративная плашка</td>
+                            </tr>
+                            <tr>
+                                <td>Срез блока</td>
+                                <td>тонированный золотом</td>
+                            </tr>
+                            <tr>
+                                <td>Цвет</td>
+                                <td>черный</td>
+                            </tr>
+                            <tr>
+                                <td>Полное наименование</td>
+                                <td>обложка с художественной вставкой сувенирная (натуральная кожа) с ежедневником большим</td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div>
+                    <div class="tabs-product">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#home">
-                                    <img src="img/icons/basket/shops.svg"> Самовывоз
-                                </a>
+                                <a class="nav-link active" data-toggle="tab" href="#home"> Самовывоз</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#menu1">
-                                    <img src="img/icons/basket/courier.svg">Доставка курьером</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu1">Доставка курьером</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#menu2">
-                                    <img src="img/icons/basket/post.svg">Доставка почтой</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu2">Доставка почтой</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu3">Доставка почтой</a>
                             </li>
                         </ul>
 
@@ -254,85 +260,40 @@
                             <div class="tab-pane active container" id="home">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-lg-6">
-                                            <p class="basket-delivery-city">Могилев</p>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio"> Салон-магазин,
-            ул.Пионерская, 33
-          </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio">Цум, 2-й этаж,
-            ул.Первомайская, 61
-          </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio">ТЦ «Планета Green»,
-            ул.Островского, 5
-          </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio">ТРЦ «Парк-Сити», Минское
-            шоссе, 31
-          </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio">Салон-магазин, ул.
-            Первомайская, 46
-          </label>
-                                            </div>
-                                            <p class="basket-delivery-city">Бобруйск</p>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio"> ТЦ «Корона», ул. 50 лет ВЛКСМ, 33-3
-          </label>
-                                            </div>
-                                            <p class="basket-delivery-city">Барановичи</p>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio"> ТРЦ «Центральный», ул.Советская, 74А
-          </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio"> ТРЦ «Светиловский», пр-т Советский, 35
-          </label>
-                                            </div>
-                                            <p class="basket-delivery-city">Минск</p>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio"> Салон-магазин, пр-т Независимости, 12
-          </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optradio"> Салон-магазин, ТЦ "Титан", пр-т Дзержинского, 104
-          </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="dop-info">
-                                                <div class="dop-info-contact">
-                                                    <p>Время работы:</p>
-                                                    <span>пн-пт с 9:00 до 21:00</span>
-                                                    <span>сб с 9:00 до 20:00</span>
-                                                    <span>вс с 9:00 до 19:00</span>
-                                                    <p class="dop-info-contact-phone">Контактный телефон:</p>
-                                                    <a href="tel:+375291565660">+375(29)156-56-60</a>
-                                                </div>
-                                                <img src="img/map.jpg" alt="">
-                                            </div>
+                                        <div class="col-lg-12">
+                                            <p class="product-tabs-cont">В деловой жизни важна каждая деталь.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane container" id="menu1">Нет информации</div>
-                            <div class="tab-pane container" id="menu2">Нет информации</div>
+                            <div class="tab-pane container" id="menu1">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p class="product-tabs-cont">В деловой жизни важна каждая деталь. Удобный ежедневник в кожаной обложке станет незаменимым помощником в планировании дел. Ежедневник в обложке из натуральной кожи станет не только отличным помощником в организации
+                                                рабочего времени, но и украшением рабочего стола, а также запоминающимся бизнес подарком для коллег и VIP-персон.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane container" id="menu2">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p class="product-tabs-cont">Удобный ежедневник в кожаной обложке станет незаменимым помощником в планировании дел.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane container" id="menu3">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p class="product-tabs-cont">В деловой жизни важна каждая деталь.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -342,7 +303,7 @@
                 <section class="home-slider-product">
                     <div class="container-fluid">
                         <div class="row">
-                            <span>Вам могут понравиться</span>
+                            <div class="text-center col-12 super-sale">Вам могут понравиться</div>
                             <div class="tab_container tab-wrapper">
                                 <div class="tab_content product-slider-lazy">
                                     <div class="product-slider-lazy-one">

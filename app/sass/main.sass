@@ -350,15 +350,13 @@ b, strong
 .home-slider-product:after
 	content: url('../img/product-slider/visual-left.svg')
 	position: absolute
-	top: 7px
-	height: 100%
+	top: 0px
 	left: 0px	
 
 .home-slider-product:before
 	content: url('../img/product-slider/visual-right.svg')
 	position: absolute
-	top: 7px
-	height: 100%
+	top: 0px
 	right: 0px			
 
 ul.tabs
@@ -2090,7 +2088,9 @@ footer
 
 /* One Product */
 .cart-one-product
-	margin: 30px 165px 100px	
+	margin: 30px 165px 100px
+	.home-slider-product
+		margin-bottom: 0px	
 
 .advantages
 	margin: 60px 350px 40px
@@ -2116,6 +2116,71 @@ footer
 			line-height: normal
 			color: $menu_link
 			margin-bottom: 0px
+
+.product-table
+	margin-bottom: 100px
+	.product-table-table
+		span
+			background: #EEEEEE
+			border-top-left-radius: 8px
+			margin: 0px -15px
+			min-height: 48px
+			padding: 10px 30px
+			display: block
+			font-weight: bold
+			font-size: 18px
+			line-height: normal
+			color: $number
+		table
+			margin-top: 30px
+			tr:nth-child(odd)	
+				background: #fff
+				background-radius: 2px
+				td:first-child
+					font-weight: normal
+					font-size: 14px
+					line-height: normal
+					color: $menu_link
+					width: 50%
+					padding: 10px 30px
+				td:last-child
+					color: $number
+					width: 50%
+					padding: 10px 30px
+			tr:nth-child(even)	
+				background: #EEEEEE	
+				background-radius: 2px
+				td:first-child
+					font-weight: normal
+					font-size: 14px
+					line-height: normal
+					color: $menu_link
+					width: 50%
+					padding: 10px 30px
+				td:last-child
+					color: $number
+					width: 50%
+					padding: 10px 30px
+	.tabs-product
+		.nav-tabs
+			background: #EEEEEE
+			border-top-right-radius: 8px
+			margin: 0px -15px
+			min-height: 48px
+			font-weight: bold
+			font-size: 18px
+			line-height: normal
+			color: $number
+		.tab-content
+			margin-top: 30px				
+
+
+.super-sale
+	font-weight: bold
+	font-size: 24px
+	line-height: normal
+	text-align: center
+	color: $number		
 /* One Product */	
 
 
