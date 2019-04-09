@@ -316,105 +316,157 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#home"> Самовывоз</a>
+                                <a class="nav-link active" data-toggle="tab" href="#home">Самовывоз</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#menu1">Доставка курьером</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu1">Оплата</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#menu2">Доставка почтой</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu2">Доставка</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#menu3">Доставка почтой</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu3">Отзывы</a>
                             </li>
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div class="tab-pane active" id="home">
-                                <p class="product-tabs-cont">В деловой жизни важна каждая деталь.</p>
-                            </div>
-                            <div class="tab-pane" id="menu1">
                                 <p class="product-tabs-cont">В деловой жизни важна каждая деталь. Удобный ежедневник в кожаной обложке станет незаменимым помощником в планировании дел. Ежедневник в обложке из натуральной кожи станет не только отличным помощником в организации рабочего
                                     времени, но и украшением рабочего стола, а также запоминающимся бизнес подарком для коллег и VIP-персон.</p>
                             </div>
-                            <div class="tab-pane" id="menu2">
-                                <p class="product-tabs-cont">Удобный ежедневник в кожаной обложке станет незаменимым помощником в планировании дел.</p>
+                            <div class="tab-pane" id="menu1">
+                                <p class="product-tabs-cont">Вы можете воспользоваться любым из предложенных способов в зависимости от типа выбранной доставки. Подробнее со способами на следующей странице “Способы оплаты”</p>
+                                <div class="product-tabs-cont-cash">
+                                    <div class="product-tabs-cont-cash-one">
+                                        <span>Наличными</span>
+                                        <img src="img/icons/paying/cash.svg" alt="">
+                                    </div>
+                                    <div class="product-tabs-cont-cash-one">
+                                        <span>Банковской картой</span>
+                                        <img src="img/icons/paying/cards.svg" alt="">
+                                        <p>Способ не доступен при заказе доставки курьером. У курьера нет аппарата для приема таких платежей</p>
+                                    </div>
+                                    <div class="product-tabs-cont-cash-one">
+                                        <span>Счет-фактура</span>
+                                        <img src="img/icons/paying/invoice.svg" alt="">
+                                    </div>
+                                    <div class="product-tabs-cont-cash-one">
+                                        <span>Банковской картой онлайн</span>
+                                        <img src="img/icons/paying/webpay.svg" alt="">
+                                    </div>
+                                    <div class="product-tabs-cont-cash-one">
+                                        <span>ЕРИП</span>
+                                        <img src="img/icons/paying/erip.svg" alt="">
+                                    </div>
+                                    <div class="product-tabs-cont-cash-one">
+                                        <span>Карта рассрочки “Халва”</span>
+                                        <img src="img/icons/paying/halva.svg" alt="">
+                                    </div>
+                                    <div class="product-tabs-cont-cash-one">
+                                        <span>Карта "Карта Покупок"</span>
+                                        <img src="img/icons/paying/kartapokupok.svg" alt="">
+                                    </div>
+                                    <div class="product-tabs-cont-cash-one">
+                                        <span>Карта рассрочки "Smart карта"</span>
+                                        <img src="img/icons/paying/smartkarta.svg" alt="">
+                                        <p>Способ не доступен при заказе доставки курьером или при доставке почтой. Данный способ использкется только при оформлении покупки из наших магазинов
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane" id="menu3">
-                                <p class="product-tabs-cont">В деловой жизни важна каждая деталь.</p>
+                            <div class="tab-pane" id="menu2">
+                                <p class="product-tabs-cont"> Мы предлагаем несколько видов доставки, чтобы Вам было удобно выбрать наиболее предпочтительный способ. Подробнее со способами на следующей странице “Способы доставки”</p>
+                                <div></div>
+                            </div>
+                            <div class="tab-pane product-tabs-cont-orders" id="menu3">
+                                <div>
+                                    <span class="name-comment">Юлия</span>
+                                    <span class="date-comment">11.02.2019</span>
+                                    <p class="product-tabs-cont">В деловой жизни важна каждая деталь.</p>
+                                </div>
+                                <div>
+                                    <span class="name-comment">Юлия</span>
+                                    <span class="date-comment">11.02.2019</span>
+                                    <p class="product-tabs-cont">В деловой жизни важна каждая деталь.</p>
+                                </div>
+                                <div class="sorry">
+                                    <input type="text" placeholder="Оставьте свой отзыв...">
+                                    <p class="product-tabs-cont-sorry">К сожалению, чтобы опубликовать отзыв, необходимо войти в свой профиль или зарегистрироваться</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="r">
-                <!--Product slider home page-->
-                <section class="home-slider-product">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="text-center col-12 super-sale">Вам могут понравиться</div>
-                            <div class="tab_container tab-wrapper">
-                                <div class="tab_content product-slider-lazy">
-                                    <div class="product-slider-lazy-one">
-                                        <span class="product-slider-type">Новинка</span>
-                                        <img src="img/cart-product/image.jpg" alt="">
-                                        <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
-                                        <hr class="line-product">
-                                        <p class="product-slider-info">Title size from one to two lines </p>
-                                    </div>
-                                    <div class="product-slider-lazy-one">
-                                        <span class="product-slider-type">Новинка</span>
-                                        <img src="img/cart-product/image.jpg" alt="">
-                                        <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
-                                        <hr class="line-product">
-                                        <p class="product-slider-info">Title size from one to two lines </p>
-                                    </div>
-                                    <div class="product-slider-lazy-one">
-                                        <span class="product-slider-type">Новинка</span>
-                                        <img src="img/cart-product/image.jpg" alt="">
-                                        <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
-                                        <hr class="line-product">
-                                        <p class="product-slider-info">Title size from one to two lines </p>
-                                    </div>
-                                    <div class="product-slider-lazy-one">
-                                        <span class="product-slider-type">Новинка</span>
-                                        <img src="img/cart-product/image.jpg" alt="">
-                                        <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
-                                        <hr class="line-product">
-                                        <p class="product-slider-info">Title size from one to two lines </p>
-                                    </div>
-                                    <div class="product-slider-lazy-one">
-                                        <span class="product-slider-type">Новинка</span>
-                                        <img src="img/cart-product/image.jpg" alt="">
-                                        <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
-                                        <hr class="line-product">
-                                        <p class="product-slider-info">Title size from one to two lines </p>
-                                    </div>
-                                    <div class="product-slider-lazy-one">
-                                        <span class="product-slider-type">Новинка</span>
-                                        <img src="img/cart-product/image.jpg" alt="">
-                                        <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
-                                        <hr class="line-product">
-                                        <p class="product-slider-info">Title size from one to two lines </p>
-                                    </div>
-                                    <div class="product-slider-lazy-one">
-                                        <span class="product-slider-type">Новинка</span>
-                                        <img src="img/cart-product/image.jpg" alt="">
-                                        <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
-                                        <hr class="line-product">
-                                        <p class="product-slider-info">Title size from one to two lines </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--END Product slider home page-->
-            </div>
+
         </div>
         </div>
     </section>
+    <div class="r">
+        <!--Product slider home page-->
+        <section class="home-slider-product">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="text-center col-12 super-sale">Вам могут понравиться</div>
+                    <div class="tab_container tab-wrapper">
+                        <div class="tab_content product-slider-lazy">
+                            <div class="product-slider-lazy-one">
+                                <span class="product-slider-type">Новинка</span>
+                                <img src="img/cart-product/image.jpg" alt="">
+                                <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
+                                <hr class="line-product">
+                                <p class="product-slider-info">Title size from one to two lines </p>
+                            </div>
+                            <div class="product-slider-lazy-one">
+                                <span class="product-slider-type">Новинка</span>
+                                <img src="img/cart-product/image.jpg" alt="">
+                                <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
+                                <hr class="line-product">
+                                <p class="product-slider-info">Title size from one to two lines </p>
+                            </div>
+                            <div class="product-slider-lazy-one">
+                                <span class="product-slider-type">Новинка</span>
+                                <img src="img/cart-product/image.jpg" alt="">
+                                <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
+                                <hr class="line-product">
+                                <p class="product-slider-info">Title size from one to two lines </p>
+                            </div>
+                            <div class="product-slider-lazy-one">
+                                <span class="product-slider-type">Новинка</span>
+                                <img src="img/cart-product/image.jpg" alt="">
+                                <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
+                                <hr class="line-product">
+                                <p class="product-slider-info">Title size from one to two lines </p>
+                            </div>
+                            <div class="product-slider-lazy-one">
+                                <span class="product-slider-type">Новинка</span>
+                                <img src="img/cart-product/image.jpg" alt="">
+                                <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
+                                <hr class="line-product">
+                                <p class="product-slider-info">Title size from one to two lines </p>
+                            </div>
+                            <div class="product-slider-lazy-one">
+                                <span class="product-slider-type">Новинка</span>
+                                <img src="img/cart-product/image.jpg" alt="">
+                                <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
+                                <hr class="line-product">
+                                <p class="product-slider-info">Title size from one to two lines </p>
+                            </div>
+                            <div class="product-slider-lazy-one">
+                                <span class="product-slider-type">Новинка</span>
+                                <img src="img/cart-product/image.jpg" alt="">
+                                <p class="product-slider-price"><span>103,8</span> 52.8 BYN</p>
+                                <hr class="line-product">
+                                <p class="product-slider-info">Title size from one to two lines </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END Product slider home page-->
+    </div>
     <!--END Product -->
 
     <!--Footer-->
